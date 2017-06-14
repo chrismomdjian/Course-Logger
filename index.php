@@ -2,6 +2,9 @@
 include("data.php");
 
 $pageTitle = "Required Courses";
+$grade_points = 0;
+$total_units = 0.0;
+$gpa = 0.0;
 
 if(isset($_GET['sort'])) {
   if($_GET['sort'] == "complete") {
@@ -32,6 +35,19 @@ if(isset($_GET['sort'])) {
 
     <div class="wrapper">
       <h2><?php echo $pageTitle; ?></h2>
+
+      <!-- Current GPA -->
+      <?php
+        foreach($classes as $course){
+          if($course['status'] == "complete"){
+            $grade_points += $course['grade_points'];
+            $total_units += $course['units'];
+          }
+        }
+
+        $gpa = $grade_points / $total_units;
+      ?>
+
       <ul>
         <?php
         foreach($classes as $course) {
