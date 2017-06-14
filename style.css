@@ -1,17 +1,19 @@
 body {
-  font-family: monospace, sans-serif;
+  font-family: "Bookman", sans-serif;
+  margin: 0;
 }
 
 .main-nav {
-  color: #333;
+  color: #fff;
   padding: 10px;
   font-weight: bold;
   margin-bottom: 20px;
+  background-color: #9242f4;
 }
 
 #nav-logo {
   font-size: 2em;
-  color: #34495e;
+  color: #fff;
   text-transform: uppercase;
   display: inline-block;
   padding: 10px;
@@ -27,7 +29,6 @@ body {
   list-style: none;
   display: inline-block;
   float: right;
-  padding: 10px;
 }
 
 #nav-items li {
@@ -36,11 +37,13 @@ body {
 }
 
 #nav-items a li {
-  color: #333;
+  color: #fff;
+  padding: 10px;
+  margin: 10px;
 }
 
 #nav-items a li:hover {
-  color: #c0392b;
+  opacity: .80;
 }
 
 .wrapper {
