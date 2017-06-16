@@ -41,5 +41,13 @@ if(isset($_GET['sort'])) {
       <ul id="nav-items">
         <a href="http://chrismomdjian.com/PDO/index.php?sort=complete"><li>Completed Courses</li></a>
         <a href="http://chrismomdjian.com/PDO/index.php?sort=incomplete"><li>Unfinished Courses</li></a>
+        <span id="mobile-nav-btn">MENU</span>
+      </ul>
+    </div>
+
+    <div id="mobile-nav">
+      <ul>
+        <a href="http://chrismomdjian.com/PDO/index.php?sort=complete"><li>Completed Courses</li></a>
+        <a href="http://chrismomdjian.com/PDO/index.php?sort=incomplete"><li>Unfinished Courses</li></a>
       </ul>
     </div>

@@ -1,15 +1,57 @@
+html {
+  margin:0;
+	padding:0;
+	height:100%;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Bookman", sans-serif;
   margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 .main-nav {
   color: #fff;
   padding: 10px;
   font-weight: bold;
-  margin-bottom: 20px;
   background-color: #9242f4;
 }
+
+#mobile-nav-btn {
+  border: solid 2px lightgrey;
+  border-radius: 5px;
+  padding: 10px;
+  display: none;
+}
+
+#mobile-nav-btn:hover {
+  opacity: .80;
+  cursor: pointer;
+}
+
+#mobile-nav {
+  display: none;
+  color: #fff;
+  margin-top: 0;
+  background-color: #fff;
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+#mobile-nav a li {
+  list-style: none;
+  font-size: 15px;
+  color: #9242f4;
+}
+
+#mobile-nav a li:hover {
+  text-decoration: none;
+  opacity: .80;
+}
+
 
 #nav-logo {
   font-size: 2em;
@@ -46,8 +88,31 @@ body {
 }
 
 .wrapper {
-  width: 50%;
-  margin: 0 auto;
+  min-height: 100%;
+}
+
+.container {
+  margin: 20px;
+  padding-bottom: 100px;
+}
+
+.bottom-footer {
+  color: #fff;
+  padding: 25px;
+  font-weight: bold;
+  background-color: #9242f4;
+  width: 100%;
+	position: relative;
+	bottom: 0;
+	left: 0;
+}
+
+.bottom-footer a {
+  color: #fff;
+}
+
+.bottom-footer a:hover {
+  opacity: .80;
 }
 
 .gpa-column {
@@ -72,4 +137,35 @@ body {
 .course-title {
   font-size: 3.5em;
   color: lightgrey;
+}
+
+
+
+@media only screen and (min-width: 681px) {
+  #mobile-nav {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  #nav-logo {
+    margin: 0;
+    font-size: 1.5em;
+  }
+
+  #nav-items li {
+    display: none;
+  }
+
+  #mobile-nav {
+    padding: 10px 10px 10px 0;
+  }
+
+  #mobile-nav-btn {
+    display: inline-block;
+  }
+
+  .gpa-column, .main-column {
+    padding: 20px;
+  }
 }
