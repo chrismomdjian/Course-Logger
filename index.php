@@ -49,11 +49,11 @@ if(isset($_GET['sort'])) {
 
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-sm-4">
+        <div class="gpa-column col-xs-12 col-sm-6">
           <h2><?php echo "Current GPA: <br><span id='gpa'>", $gpa, "</span>"; ?></h2>
         </div>
 
-        <div class="col-xs-12 col-sm-8">
+        <div class="col-xs-12 col-sm-6">
           <h2><?php echo $page_title; ?></h2>
           <ul>
             <?php

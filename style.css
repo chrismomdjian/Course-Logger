@@ -50,6 +50,10 @@ body {
   margin: 0 auto;
 }
 
+.gpa-column {
+  text-align: center;
+}
+
 .complete {
   color: lightgreen;
   font-weight: bold;
@@ -61,6 +65,6 @@ body {
 }
 
 #gpa {
-  font-size: 3.5em;
+  font-size: 4.5em;
   color: lightgrey;
 }
