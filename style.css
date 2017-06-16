@@ -14,7 +14,6 @@ body {
 #nav-logo {
   font-size: 2em;
   color: #fff;
-  text-transform: uppercase;
   display: inline-block;
   padding: 10px;
   margin: 10px;
@@ -59,4 +58,9 @@ body {
 .incomplete {
   color: firebrick;
   font-weight: bold;
+}
+
+#gpa {
+  font-size: 3.5em;
+  color: lightgrey;
 }

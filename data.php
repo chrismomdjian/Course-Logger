@@ -115,7 +115,7 @@ $classes[] = [
   "title" => "Introduction to Computer Science/Information Systems",
   "number" => 101,
   "units" => 5.0,
-  "grade_points" => 15,
+  "grade_points" => 20,
   "status" => "complete"
 ];
 
@@ -133,7 +133,7 @@ $classes[] = [
   "title" => "Health",
   "number" => 104,
   "units" => 3.0,
-  "grade_points" => 10,
+  "grade_points" => 9,
   "status" => "complete"
 ];
 
@@ -142,7 +142,7 @@ $classes[] = [
   "title" => "Renaissance Art History",
   "number" => 190,
   "units" => 3.0,
-  "grade_points" => 8,
+  "grade_points" => 6,
   "status" => "complete"
 ];
 
@@ -159,6 +159,15 @@ $classes[] = [
   "department" => "Psychology",
   "title" => "General Psychology",
   "number" => 101,
+  "units" => 3.0,
+  "grade_points" => 12,
+  "status" => "complete"
+];
+
+$classes[] = [
+  "department" => "Music",
+  "title" => "Music Appreciation",
+  "number" => 120,
   "units" => 3.0,
   "grade_points" => 12,
   "status" => "complete"

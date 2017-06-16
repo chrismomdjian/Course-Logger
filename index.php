@@ -32,12 +32,14 @@ if(isset($_GET['sort'])) {
   <head>
     <title><?php echo $page_title; ?></title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
   <body>
     <div class="main-nav">
-      <a href="http://chrismomdjian.com/PDO/index.php"><h4 id="nav-logo">Course Logger</h4></a>
+      <a href="http://chrismomdjian.com/PDO/index.php"><h4 id="nav-logo">CourseLogger</h4></a>
       <ul id="nav-items">
         <a href="http://chrismomdjian.com/PDO/index.php?sort=complete"><li>Completed Courses</li></a>
         <a href="http://chrismomdjian.com/PDO/index.php?sort=incomplete"><li>Unfinished Courses</li></a>
@@ -45,23 +47,29 @@ if(isset($_GET['sort'])) {
     </div>
 
 
-    <div class="wrapper">
-      <h2><?php echo $page_title; ?></h2>
-      <h2><?php echo "Current GPA: ", $gpa; ?></h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4">
+          <h2><?php echo "Current GPA: <br><span id='gpa'>", $gpa, "</span>"; ?></h2>
+        </div>
 
-      <ul>
-        <?php
-        foreach($classes as $course) {
-          if(isset($_GET['sort'])) {
-            if($_GET['sort'] == $course['status']) {
-              echo "<li><p class='" . $course['status'] . "'>" . $course['title'] . "</p></li>";
+        <div class="col-xs-12 col-sm-8">
+          <h2><?php echo $page_title; ?></h2>
+          <ul>
+            <?php
+            foreach($classes as $course) {
+              if(isset($_GET['sort'])) {
+                if($_GET['sort'] == $course['status']) {
+                  echo "<li><p class='" . $course['status'] . "'>" . $course['title'] . "</p></li>";
+                }
+              } else {
+                echo "<li><p class='" . $course['status'] . "'>" . $course['title'] . "</li>";
+              }
             }
-          } else {
-            echo "<li><p class='" . $course['status'] . "'>" . $course['title'] . "</li>";
-          }
-        }
-        ?>
-      </ul>
+            ?>
+          </ul>
+        </div>
+      </div> <!-- end row -->
     </div>
   </body>
 </html>
