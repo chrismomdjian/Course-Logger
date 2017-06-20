@@ -115,12 +115,13 @@ body {
   opacity: .80;
 }
 
-.gpa-column {
+.gpa-column,
+.course-name-column {
   text-align: center;
 }
 
 .complete {
-  color: lightgreen;
+  color: #27ae60;
   font-weight: bold;
 }
 
@@ -137,6 +138,49 @@ body {
 .course-title {
   font-size: 3.5em;
   color: lightgrey;
+}
+
+/* Form styles */
+
+.form-contain {
+  width: 40%;
+  margin: 10px auto;
+  text-align: justify;
+}
+
+.form-section {
+  text-align: center;
+}
+
+.form-section input, .form-section select {
+  width: 100%;
+  font-size: 1.3em;
+}
+
+.btn {
+  background-color: #9242f4;
+  color: #fff;
+  font-weight: bold;
+}
+
+.success-message {
+  background-color: #27ae60;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0;
+  padding: 20px;
+  border-radius: 3px;
+}
+
+.error-message {
+  background-color: #c0392b;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0;
+  padding: 20px;
+  border-radius: 3px;
 }
 
 
@@ -167,5 +211,9 @@ body {
 
   .gpa-column, .main-column {
     padding: 20px;
+  }
+
+  .form-contain {
+    width: 95%;
   }
 }
