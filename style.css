@@ -19,6 +19,14 @@ body {
   background-color: #9242f4;
 }
 
+.widget-border {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  border: solid 2px lightgrey;
+  border-radius: 3px;
+}
+
 #mobile-nav-btn {
   border: solid 2px lightgrey;
   border-radius: 5px;
@@ -91,8 +99,8 @@ body {
   min-height: 100%;
 }
 
-.container {
-  margin: 20px;
+.container-fluid {
+  margin: 5px;
   padding-bottom: 100px;
 }
 
@@ -213,8 +221,17 @@ body {
     display: inline-block;
   }
 
+  .widget-border {
+    width: 95%;
+    margin: 0 auto;
+  }
+
   .gpa-column, .main-column {
     padding: 20px;
+  }
+
+  #gpa {
+    font-size: 2.5em;
   }
 
   .form-contain {

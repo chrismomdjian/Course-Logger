@@ -49,7 +49,7 @@ if(isset($_POST['add-course'])) {
 ?>
 
     <div class="wrapper">
-      <div class="form-section container">
+      <div class="form-section container-fluid">
         <h1 class="course-title">Add a Course</h1>
         <div class="form-contain">
 

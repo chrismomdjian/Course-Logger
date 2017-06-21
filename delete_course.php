@@ -33,7 +33,7 @@ if(isset($confirmMessage)) {
 ?>
 
     <div class="wrapper">
-      <div class="form-section container">
+      <div class="form-section container-fluid">
         <h1 class="course-title">Delete a Course</h1>
         <div class=".confirm-deletion-column">
 
@@ -48,7 +48,7 @@ if(isset($confirmMessage)) {
 
           <form action="<?php echo $_SERVER['PHP_SELF'] . "?id=$course_id"; ?>" method="POST">
             <?php if(!isset($confirmMessage)){ ?>
-              <p>Are you sure you would like to delete the course: <?php echo $course_title->title; ?> ?</p>
+              <p>Are you sure you would like to delete the course: <strong><?php echo $course_title->title; ?></strong>?</p>
 
               <button type="submit" name="confirm_message">Confirm</button>
               &nbsp;&nbsp;
