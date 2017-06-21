@@ -8,6 +8,10 @@ include("inc/header.php");
         <div class="row">
           <div class="gpa-column col-xs-12 col-sm-6">
             <h2><?php echo "Current GPA <br><span id='gpa'>", $gpa, "</span>"; ?></h2>
+            <?php if($page_title == "CourseLogger") {
+              echo "<h3><strong>Green</strong> = <span class='complete'>Complete</span></h3>";
+              echo "<h3><strong>Red</strong> = <span class='incomplete'>Incomplete</span></h3>";
+            }?>
           </div>
 
           <div class="main-column col-xs-12 col-sm-6">

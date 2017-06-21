@@ -148,6 +148,10 @@ body {
   text-align: justify;
 }
 
+.confirm-deletion-column {
+  text-align: center;
+}
+
 .form-section {
   text-align: center;
 }

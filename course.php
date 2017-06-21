@@ -48,7 +48,8 @@ $course_information = $handler->query("SELECT * FROM courses");
           // }
           ?>
           <a href="http://chrismomdjian.com/PDO/edit_course.php?id=<?php echo $class_id; ?>">Edit</a>
-          &nbsp;&nbsp;<span><a href="#">Delete</a></span>
+          &nbsp;&nbsp;
+          <span><a href="http://chrismomdjian.com/PDO/delete_course.php?id=<?php echo $class_id; ?>">Delete</a></span>
 
         </div>
       </div>
