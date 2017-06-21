@@ -22,35 +22,36 @@ $course_information = $handler->query("SELECT * FROM courses");
 
         <div class="col-xs-12 col-sm-6">
 
-          <h1>Course Information</h1>
+          <div class="widget-border">
+            <h1>Course Information</h1>
 
-          <?php
-          while($row = $course_information->fetch()) {
-            if($class_id == $row['id']) {
-              echo "<strong>Department: </strong>" . $row['department'] . "<br>";
-              echo "<strong>Course Title: </strong>" . $row['title'] . "<br>";
-              echo "<strong>Course Number: </strong>" . $row['number'] . "<br>";
-              echo "<strong>Units: </strong>" . $row['units'] . "<br>";
-              echo "<strong>Grade Points Earned: </strong>" . $row['grade_points'] . "<br>";
-              echo "<strong>Letter Grade: </strong>" . $row['grade'] . "<br>";
-              echo "<strong>Status: </strong>" . $row['status'] . "<br>";
+            <?php
+            while($row = $course_information->fetch()) {
+              if($class_id == $row['id']) {
+                echo "<strong>Department: </strong>" . $row['department'] . "<br>";
+                echo "<strong>Course Title: </strong>" . $row['title'] . "<br>";
+                echo "<strong>Course Number: </strong>" . $row['number'] . "<br>";
+                echo "<strong>Units: </strong>" . $row['units'] . "<br>";
+                echo "<strong>Grade Points Earned: </strong>" . $row['grade_points'] . "<br>";
+                echo "<strong>Letter Grade: </strong>" . $row['grade'] . "<br>";
+                echo "<strong>Status: </strong>" . $row['status'] . "<br>";
+              }
             }
-          }
-          // foreach($classes as $key => $course) {
-          //   if($class_id == $key) {
-          //     echo "<strong>Department: </strong>" . $course['department'] . "<br>";
-          //     echo "<strong>Course Title: </strong>" . $course['title'] . "<br>";
-          //     echo "<strong>Course Number: </strong>" . $course['number'] . "<br>";
-          //     echo "<strong>Units: </strong>" . $course['units'] . "<br>";
-          //     echo "<strong>Grade Points Earned: </strong>" . $course['grade_points'] . "<br>";
-          //     echo "<strong>Status: </strong>" . $course['status'];
-          //   }
-          // }
-          ?>
-          <a href="http://chrismomdjian.com/PDO/edit_course.php?id=<?php echo $class_id; ?>">Edit</a>
-          &nbsp;&nbsp;
-          <span><a href="http://chrismomdjian.com/PDO/delete_course.php?id=<?php echo $class_id; ?>">Delete</a></span>
-
+            // foreach($classes as $key => $course) {
+            //   if($class_id == $key) {
+            //     echo "<strong>Department: </strong>" . $course['department'] . "<br>";
+            //     echo "<strong>Course Title: </strong>" . $course['title'] . "<br>";
+            //     echo "<strong>Course Number: </strong>" . $course['number'] . "<br>";
+            //     echo "<strong>Units: </strong>" . $course['units'] . "<br>";
+            //     echo "<strong>Grade Points Earned: </strong>" . $course['grade_points'] . "<br>";
+            //     echo "<strong>Status: </strong>" . $course['status'];
+            //   }
+            // }
+            ?>
+            <a href="http://chrismomdjian.com/PDO/edit_course.php?id=<?php echo $class_id; ?>">Edit</a>
+            &nbsp;&nbsp;
+            <span><a href="http://chrismomdjian.com/PDO/delete_course.php?id=<?php echo $class_id; ?>">Delete</a></span>
+          </div> <!-- end widget -->
         </div>
       </div>
     </div>

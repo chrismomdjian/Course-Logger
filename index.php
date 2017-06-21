@@ -24,6 +24,7 @@ include("inc/header.php");
               <h2><?php echo "<h1>" . $page_title . "</h1>"; ?></h2>
               <ul>
                 <?php
+                $count = 0;
                 $query2 = $handler->query("SELECT * FROM courses");
                 while($row = $query2->fetch()) {
                   if(isset($_GET['sort'])) {
@@ -32,6 +33,8 @@ include("inc/header.php");
                       <a href='http://chrismomdjian.com/PDO/course.php?id=" . $row['id'] . "'
                       <p class='" . $row['status'] . "'>" . $row['title'] . "</p>
                       </li></a>";
+
+                      $count++;
                     }
                   } else {
                       echo "<li>
@@ -58,8 +61,18 @@ include("inc/header.php");
                 //   }
                 // }
                 ?>
+
               </ul>
             </div>
+            <?php
+            // Get total count of sorted courses
+            if(isset($_GET['sort'])) { ?>
+              <div class="widget-border" style="text-align: center;">
+                <h3><strong>Total</strong><?php echo ": " . $count . " courses"; ?></h3>
+              </div>
+            <?php
+            }
+            ?>
           </div>
         </div> <!-- end row -->
       </div> <!-- end container -->
