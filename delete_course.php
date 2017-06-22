@@ -35,7 +35,7 @@ if(isset($confirmMessage)) {
     <div class="wrapper">
       <div class="form-section container-fluid">
         <h1 class="course-title">Delete a Course</h1>
-        <div class=".confirm-deletion-column">
+        <div class="confirm-deletion-column">
 
           <!-- Dont show error messages until form has been submitted -->
           <?php if($_SERVER['REQUEST_METHOD'] == "POST"){
