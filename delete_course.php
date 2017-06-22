@@ -50,10 +50,10 @@ if(isset($confirmMessage)) {
             <?php if(!isset($confirmMessage)){ ?>
               <p>Are you sure you would like to delete the course: <strong><?php echo $course_title->title; ?></strong>?</p>
 
-              <button type="submit" name="confirm_message">Confirm</button>
+              <button type="submit" name="confirm_message" class="btn btn-default btn-lg">Confirm</button>
               &nbsp;&nbsp;
               <a href="http://chrismomdjian.com/PDO/course.php?id=<?php echo $course_id; ?>">
-                <button type="button">Cancel</button>
+                <button type="button" class="btn btn-default btn-lg">Cancel</button>
               </a>
             <?php
             } ?>

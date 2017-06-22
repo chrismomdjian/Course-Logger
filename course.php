@@ -49,9 +49,12 @@ $course_information = $handler->query("SELECT * FROM courses");
               //   }
               // }
               ?>
-              <a href="http://chrismomdjian.com/PDO/edit_course.php?id=<?php echo $class_id; ?>">Edit</a>
+
+              <hr>
+
+              <a href="http://chrismomdjian.com/PDO/edit_course.php?id=<?php echo $class_id; ?>"><strong>Edit</strong></a>
               &nbsp;&nbsp;
-              <span><a href="http://chrismomdjian.com/PDO/delete_course.php?id=<?php echo $class_id; ?>">Delete</a></span>
+              <span><a href="http://chrismomdjian.com/PDO/delete_course.php?id=<?php echo $class_id; ?>"><strong>Delete</strong></a></span>
             </div> <!-- end widget -->
         </div>
       </div> <!-- end container -->
